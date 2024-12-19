@@ -3,77 +3,55 @@ package za.co.flash.application.pageObjectModel;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 
 public class DashboardPage {
-	
+
 	WebDriver driver;
-	WebElement sendk = driver.findElement(By.tagName("h1"));
-	/*WebElement sendk = driver.findElement(By.tagName("h1"));
-	WebElement sendk = driver.findElement(By.tagName("h1"));
-	WebElement sendk = driver.findElement(By.tagName("h1"));
-	WebElement sendk = driver.findElement(By.tagName("h1"));
-	WebElement sendk = driver.findElement(By.tagName("h1"));
-	WebElement sendk = driver.findElement(By.tagName("h1"));
-	WebElement sendk = driver.findElement(By.tagName("h1"));
-	WebElement sendk = driver.findElement(By.tagName("h1"));
-	WebElement sendk = driver.findElement(By.tagName("h1"));
-	WebElement sendk = driver.findElement(By.tagName("h1"));
-	WebElement sendk = driver.findElement(By.tagName("h1"));
-	WebElement sendk = driver.findElement(By.tagName("h1"));
-	WebElement sendk = driver.findElement(By.tagName("h1"));
-	WebElement sendk = driver.findElement(By.tagName("h1"));
-	WebElement sendk = driver.findElement(By.tagName("h1"));
-	WebElement sendk = driver.findElement(By.tagName("h1"));
-	WebElement sendk = driver.findElement(By.tagName("h1"));*/
-	
+
 	public DashboardPage(WebDriver driver) {
 		this.driver = driver;
 	}
-	
-	public void computersAvailable() {
-		//Validate Computers Tab
-		//Click Computers tab
-		//validate Computers page appears
-		//validate Desktop options
-		//Click Desktops option
+
+	public static WebElement computersTab(WebDriver driver) {
+		return driver.findElement(By.xpath("//ul[@class='top-menu']//a[normalize-space()='Computers']"));
 	}
-	
-	public void createOrder() {
-		//validate desktop page shows
-		//click sort button
-		//click option : A-Z
-		//click sort button
-		//click option : Z-A
-		//click sort button
-		//click option : Low - High
-		//click sort button
-		//click option : High - Low
-		//click sort button
-		//click option : Created on
-		
-		//Click Add to Stock
-		//Click Processor to Slow
-		//Click Add to cart final button
-		//Click Desktops hyperlink
-		
-		//Click Add to Stock
-				//Click Processor to Slow
-				//Click Add to cart final button
-				//Click Desktops hyperlink
-		
-		//Click Add to Stock
-				//Click Processor to Slow
-				//Click Add to cart final button
-				//Click Desktops hyperlink
-		
-		//Click Add to Stock
-				//Click Processor to Slow
-				//Click Add to cart final button
-				//Click Desktops hyperlink
-		
-		//Validate Total Price
+
+	public static WebElement computersHeadingEl(WebDriver driver) {
+		return driver.findElement(By.tagName("h1"));
 	}
-	
-	
+
+	public static WebElement desktopCategory(WebDriver driver) {
+		return driver.findElement(By.cssSelector("div[class='picture'] a[title='Show products in category Desktops']"));
+	}
+
+	public void validateUserDashboard() {
+
+		try {
+			System.out.println("\n\n---------------------------------------Test Case 02 : Dashboard & Computers-------------------------------------------");
+
+			// Step1: Click the COMPUTERS tab Link
+			computersTab(driver).click();
+			System.out.println("\n2. The user clicks the COMPUTERS tab in the heading bar.");
+
+			// Step2: Validate Computers page appears
+			Assert.assertEquals(computersHeadingEl(driver).getText(), "Computers");
+			System.out.println("2.1 The heading is correct: Register.");
+
+			Assert.assertTrue(desktopCategory(driver).isDisplayed());
+			System.out.println("2.2 The 'Desktop' Category is displaying.");
+
+			// Step 3: Click Desktops option
+			desktopCategory(driver).click();
+			System.out.println("2.3. The user clicked the 'Desktop' category.");
+		} catch (Error e) {
+			System.out.println("Test 2 Case failed...");
+			System.out.println("ERROR: " + e.getMessage());
+			System.out.println("Stopping Test...");
+			//driver.close();
+			//driver.quit();
+		}
+
+	}
 
 }

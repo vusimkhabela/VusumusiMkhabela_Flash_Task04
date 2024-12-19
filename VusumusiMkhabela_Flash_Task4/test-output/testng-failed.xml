@@ -5,9 +5,11 @@
     <classes>
       <class name="za.co.flash.application.testScripts.TC01HomeLanding">
         <methods>
-          <include name="terminate"/>
+          <include name="runT3"/>
+          <include name="runT1"/>
+          <include name="tearDown"/>
+          <include name="runT2"/>
           <include name="start"/>
-          <include name="run"/>
         </methods>
       </class> <!-- za.co.flash.application.testScripts.TC01HomeLanding -->
     </classes>
