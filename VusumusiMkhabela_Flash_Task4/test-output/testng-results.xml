@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-12-19T16:05:12 SAST" name="Default suite" finished-at="2024-12-19T16:13:54 SAST" duration-ms="522016">
+    <groups>
+    </groups>
+    <test started-at="2024-12-19T16:05:12 SAST" name="Default test" finished-at="2024-12-19T16:13:54 SAST" duration-ms="522016">
+      <class name="za.co.flash.application.testScripts.TC01HomeLanding">
+        <test-method is-config="true" signature="start()[pri:0, instance:za.co.flash.application.testScripts.TC01HomeLanding@275bf9b3]" started-at="2024-12-19T16:05:12 SAST" name="start" finished-at="2024-12-19T16:05:26 SAST" duration-ms="14496" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method signature="run()[pri:0, instance:za.co.flash.application.testScripts.TC01HomeLanding@275bf9b3]" started-at="2024-12-19T16:05:26 SAST" name="run" finished-at="2024-12-19T16:13:52 SAST" duration-ms="505102" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- run -->
+        <test-method is-config="true" signature="terminate()[pri:0, instance:za.co.flash.application.testScripts.TC01HomeLanding@275bf9b3]" started-at="2024-12-19T16:13:52 SAST" name="terminate" finished-at="2024-12-19T16:13:54 SAST" duration-ms="2157" status="FAIL">
+          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
+            <message>
+              <![CDATA[Error communicating with the remote browser. It may have died.
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'LAPSAF80207', ip: '192.168.0.75', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=131.0.6778.204 (52183f9e99a61056f9b78535f53d256f1516f2a0-refs/branch-heads/6778_155@{#7}), userDataDir=C:\Users\LOCAL~1.USE\AppData\Local\Temp\scoped_dir12088_773938906}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), webauthn:extension:minPinLength=true, goog:chromeOptions={debuggerAddress=localhost:53742}, webauthn:extension:credBlob=true, webauthn:extension:prf=true, acceptInsecureCerts=false, browserVersion=131.0.6778.140, fedcm:accounts=true, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+Session ID: d17381cf409c7f23f3a2ec315ed13f42]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'LAPSAF80207', ip: '192.168.0.75', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=131.0.6778.204 (52183f9e99a61056f9b78535f53d256f1516f2a0-refs/branch-heads/6778_155@{#7}), userDataDir=C:\Users\LOCAL~1.USE\AppData\Local\Temp\scoped_dir12088_773938906}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), webauthn:extension:minPinLength=true, goog:chromeOptions={debuggerAddress=localhost:53742}, webauthn:extension:credBlob=true, webauthn:extension:prf=true, acceptInsecureCerts=false, browserVersion=131.0.6778.140, fedcm:accounts=true, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+Session ID: d17381cf409c7f23f3a2ec315ed13f42
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:658)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:694)
+at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:533)
+at za.co.flash.application.testScripts.TC01HomeLanding.terminate(TC01HomeLanding.java:42)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:644)
+at org.testng.TestRunner.afterRun(TestRunner.java:914)
+at org.testng.TestRunner.run(TestRunner.java:605)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: java.lang.RuntimeException: Process refused to die after 10 seconds, and couldn't taskkill it: Couldn't detect pid
+at org.openqa.selenium.os.ProcessUtils.killWinProcess(ProcessUtils.java:133)
+at org.openqa.selenium.os.ProcessUtils.killProcess(ProcessUtils.java:81)
+at org.openqa.selenium.os.UnixProcess$SeleniumWatchDog.destroyHarder(UnixProcess.java:246)
+at org.openqa.selenium.os.UnixProcess$SeleniumWatchDog.access$200(UnixProcess.java:200)
+at org.openqa.selenium.os.UnixProcess.destroy(UnixProcess.java:126)
+at org.openqa.selenium.os.CommandLine.destroy(CommandLine.java:153)
+at org.openqa.selenium.remote.service.DriverService.stop(DriverService.java:221)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:94)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+... 25 more
+Caused by: java.lang.RuntimeException: Couldn't detect pid
+at org.openqa.selenium.os.ProcessUtils.getProcessId(ProcessUtils.java:195)
+at org.openqa.selenium.os.ProcessUtils.killWinProcess(ProcessUtils.java:128)
+... 33 more
+Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make field private final long java.lang.ProcessImpl.handle accessible: module java.base does not "opens java.lang" to unnamed module @11758f2a
+at java.base/java.lang.reflect.AccessibleObject.throwInaccessibleObjectException(AccessibleObject.java:388)
+at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:364)
+at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:312)
+at java.base/java.lang.reflect.Field.checkCanSetAccessible(Field.java:183)
+at java.base/java.lang.reflect.Field.setAccessible(Field.java:177)
+at org.openqa.selenium.os.ProcessUtils.getProcessId(ProcessUtils.java:181)
+... 34 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminate -->
+      </class> <!-- za.co.flash.application.testScripts.TC01HomeLanding -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
