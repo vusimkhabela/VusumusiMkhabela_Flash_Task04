@@ -55,7 +55,7 @@ public class AccPage {
 
 			orderDetailsButton(driver).click();
 			System.out.println("4.7 The user clicks on the order details link");
-			System.out.println("4.8 " + orderNumber(driver) + " has been successfully placed.");
+			System.out.println("4.8 " + orderNumber(driver).getText() + " has been successfully placed.");
 		} catch (Error e) {
 			System.out.println("Test 1 Case failed...");
 			System.out.println("ERROR: " + e.getMessage());
