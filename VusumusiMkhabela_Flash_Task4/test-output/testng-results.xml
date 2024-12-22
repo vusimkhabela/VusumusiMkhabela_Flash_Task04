@@ -1,282 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="1" failed="3" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-20T00:25:29 SAST" name="Default suite" finished-at="2024-12-20T00:26:14 SAST" duration-ms="45076">
+  <suite started-at="2024-12-22T05:17:01 SAST" name="Default suite" finished-at="2024-12-22T05:19:40 SAST" duration-ms="158572">
     <groups>
     </groups>
-    <test started-at="2024-12-20T00:25:29 SAST" name="Default test" finished-at="2024-12-20T00:26:14 SAST" duration-ms="45076">
+    <test started-at="2024-12-22T05:17:01 SAST" name="Default test" finished-at="2024-12-22T05:19:40 SAST" duration-ms="158572">
       <class name="za.co.flash.application.testScripts.TC01HomeLanding">
-        <test-method is-config="true" signature="start()[pri:0, instance:za.co.flash.application.testScripts.TC01HomeLanding@69e1dd28]" started-at="2024-12-20T00:25:29 SAST" name="start" finished-at="2024-12-20T00:25:41 SAST" duration-ms="12260" status="PASS">
+        <test-method is-config="true" signature="start()[pri:0, instance:za.co.flash.application.testScripts.TC01HomeLanding@707194ba]" started-at="2024-12-22T05:17:01 SAST" name="start" finished-at="2024-12-22T05:17:20 SAST" duration-ms="18437" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- start -->
-        <test-method signature="runT4()[pri:1, instance:za.co.flash.application.testScripts.TC01HomeLanding@69e1dd28]" started-at="2024-12-20T00:25:41 SAST" name="runT4" finished-at="2024-12-20T00:25:45 SAST" duration-ms="3831" status="PASS">
+        <test-method signature="run1()[pri:1, instance:za.co.flash.application.testScripts.TC01HomeLanding@707194ba]" started-at="2024-12-22T05:17:20 SAST" name="run1" finished-at="2024-12-22T05:17:27 SAST" duration-ms="6849" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runT4 -->
-        <test-method signature="runT2()[pri:2, instance:za.co.flash.application.testScripts.TC01HomeLanding@69e1dd28]" started-at="2024-12-20T00:25:45 SAST" name="runT2" finished-at="2024-12-20T00:26:10 SAST" duration-ms="24708" status="FAIL">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[element click intercepted: Element <span itemprop="title">...</span> is not clickable at point (584, 7). Other element would receive the click: <div id="bar-notification" class="bar-notification success" style="display: block; opacity: 0.986185;">...</div>
-  (Session info: chrome=131.0.6778.140)
-Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
-System info: host: 'LAPSAF80207', ip: '192.168.0.75', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=131.0.6778.204 (52183f9e99a61056f9b78535f53d256f1516f2a0-refs/branch-heads/6778_155@{#7}), userDataDir=C:\Users\LOCAL~1.USE\AppData\Local\Temp\scoped_dir20988_950414626}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), webauthn:extension:minPinLength=true, goog:chromeOptions={debuggerAddress=localhost:54089}, webauthn:extension:credBlob=true, webauthn:extension:prf=true, acceptInsecureCerts=false, browserVersion=131.0.6778.140, fedcm:accounts=true, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
-Session ID: 27b4d156c7a1f387a1656d48c3cdf441]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: element click intercepted: Element <span itemprop="title">...</span> is not clickable at point (584, 7). Other element would receive the click: <div id="bar-notification" class="bar-notification success" style="display: block; opacity: 0.986185;">...</div>
-  (Session info: chrome=131.0.6778.140)
-Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
-System info: host: 'LAPSAF80207', ip: '192.168.0.75', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=131.0.6778.204 (52183f9e99a61056f9b78535f53d256f1516f2a0-refs/branch-heads/6778_155@{#7}), userDataDir=C:\Users\LOCAL~1.USE\AppData\Local\Temp\scoped_dir20988_950414626}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), webauthn:extension:minPinLength=true, goog:chromeOptions={debuggerAddress=localhost:54089}, webauthn:extension:credBlob=true, webauthn:extension:prf=true, acceptInsecureCerts=false, browserVersion=131.0.6778.140, fedcm:accounts=true, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
-Session ID: 27b4d156c7a1f387a1656d48c3cdf441
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
-at za.co.flash.application.pageObjectModel.ComputersPage.returnToDesktopList(ComputersPage.java:176)
-at za.co.flash.application.pageObjectModel.ComputersPage.createOrder(ComputersPage.java:146)
-at za.co.flash.application.testScripts.TC01HomeLanding.runT2(TC01HomeLanding.java:45)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        </test-method> <!-- run1 -->
+        <test-method signature="runT2()[pri:2, instance:za.co.flash.application.testScripts.TC01HomeLanding@707194ba]" started-at="2024-12-22T05:17:27 SAST" name="runT2" finished-at="2024-12-22T05:18:37 SAST" duration-ms="70265" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runT2 -->
-        <test-method signature="runT3()[pri:3, instance:za.co.flash.application.testScripts.TC01HomeLanding@69e1dd28]" started-at="2024-12-20T00:26:10 SAST" name="runT3" finished-at="2024-12-20T00:26:11 SAST" duration-ms="1206" status="FAIL">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[element click intercepted: Element <span class="cart-label">...</span> is not clickable at point (1005, 7). Other element would receive the click: <div id="bar-notification" class="bar-notification success" style="display: block;">...</div>
-  (Session info: chrome=131.0.6778.140)
-Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
-System info: host: 'LAPSAF80207', ip: '192.168.0.75', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=131.0.6778.204 (52183f9e99a61056f9b78535f53d256f1516f2a0-refs/branch-heads/6778_155@{#7}), userDataDir=C:\Users\LOCAL~1.USE\AppData\Local\Temp\scoped_dir20988_950414626}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), webauthn:extension:minPinLength=true, goog:chromeOptions={debuggerAddress=localhost:54089}, webauthn:extension:credBlob=true, webauthn:extension:prf=true, acceptInsecureCerts=false, browserVersion=131.0.6778.140, fedcm:accounts=true, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
-Session ID: 27b4d156c7a1f387a1656d48c3cdf441]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: element click intercepted: Element <span class="cart-label">...</span> is not clickable at point (1005, 7). Other element would receive the click: <div id="bar-notification" class="bar-notification success" style="display: block;">...</div>
-  (Session info: chrome=131.0.6778.140)
-Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
-System info: host: 'LAPSAF80207', ip: '192.168.0.75', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=131.0.6778.204 (52183f9e99a61056f9b78535f53d256f1516f2a0-refs/branch-heads/6778_155@{#7}), userDataDir=C:\Users\LOCAL~1.USE\AppData\Local\Temp\scoped_dir20988_950414626}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), webauthn:extension:minPinLength=true, goog:chromeOptions={debuggerAddress=localhost:54089}, webauthn:extension:credBlob=true, webauthn:extension:prf=true, acceptInsecureCerts=false, browserVersion=131.0.6778.140, fedcm:accounts=true, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
-Session ID: 27b4d156c7a1f387a1656d48c3cdf441
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
-at za.co.flash.application.pageObjectModel.CartPage.updateCart(CartPage.java:53)
-at za.co.flash.application.testScripts.TC01HomeLanding.runT3(TC01HomeLanding.java:51)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        <test-method signature="runT3()[pri:3, instance:za.co.flash.application.testScripts.TC01HomeLanding@707194ba]" started-at="2024-12-22T05:18:37 SAST" name="runT3" finished-at="2024-12-22T05:19:29 SAST" duration-ms="51921" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runT3 -->
-        <test-method signature="runT1()[pri:4, instance:za.co.flash.application.testScripts.TC01HomeLanding@69e1dd28]" started-at="2024-12-20T00:26:11 SAST" name="runT1" finished-at="2024-12-20T00:26:12 SAST" duration-ms="1207" status="FAIL">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[element click intercepted: Element <a href="/register" class="ico-register">...</a> is not clickable at point (864, 9). Other element would receive the click: <div id="bar-notification" class="bar-notification success" style="display: block;">...</div>
-  (Session info: chrome=131.0.6778.140)
-Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
-System info: host: 'LAPSAF80207', ip: '192.168.0.75', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=131.0.6778.204 (52183f9e99a61056f9b78535f53d256f1516f2a0-refs/branch-heads/6778_155@{#7}), userDataDir=C:\Users\LOCAL~1.USE\AppData\Local\Temp\scoped_dir20988_950414626}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), webauthn:extension:minPinLength=true, goog:chromeOptions={debuggerAddress=localhost:54089}, webauthn:extension:credBlob=true, webauthn:extension:prf=true, acceptInsecureCerts=false, browserVersion=131.0.6778.140, fedcm:accounts=true, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
-Session ID: 27b4d156c7a1f387a1656d48c3cdf441]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: element click intercepted: Element <a href="/register" class="ico-register">...</a> is not clickable at point (864, 9). Other element would receive the click: <div id="bar-notification" class="bar-notification success" style="display: block;">...</div>
-  (Session info: chrome=131.0.6778.140)
-Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
-System info: host: 'LAPSAF80207', ip: '192.168.0.75', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=131.0.6778.204 (52183f9e99a61056f9b78535f53d256f1516f2a0-refs/branch-heads/6778_155@{#7}), userDataDir=C:\Users\LOCAL~1.USE\AppData\Local\Temp\scoped_dir20988_950414626}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), webauthn:extension:minPinLength=true, goog:chromeOptions={debuggerAddress=localhost:54089}, webauthn:extension:credBlob=true, webauthn:extension:prf=true, acceptInsecureCerts=false, browserVersion=131.0.6778.140, fedcm:accounts=true, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
-Session ID: 27b4d156c7a1f387a1656d48c3cdf441
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
-at za.co.flash.application.pageObjectModel.RegisterPage.registerUser(RegisterPage.java:70)
-at za.co.flash.application.testScripts.TC01HomeLanding.runT1(TC01HomeLanding.java:36)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        <test-method signature="runT4()[pri:4, instance:za.co.flash.application.testScripts.TC01HomeLanding@707194ba]" started-at="2024-12-22T05:19:29 SAST" name="runT4" finished-at="2024-12-22T05:19:39 SAST" duration-ms="10699" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runT1 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:za.co.flash.application.testScripts.TC01HomeLanding@69e1dd28]" started-at="2024-12-20T00:26:12 SAST" name="tearDown" finished-at="2024-12-20T00:26:14 SAST" duration-ms="1570" status="FAIL">
-          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
-            <message>
-              <![CDATA[Error communicating with the remote browser. It may have died.
-Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
-System info: host: 'LAPSAF80207', ip: '192.168.0.75', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
-Driver info: driver.version: RemoteWebDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=131.0.6778.204 (52183f9e99a61056f9b78535f53d256f1516f2a0-refs/branch-heads/6778_155@{#7}), userDataDir=C:\Users\LOCAL~1.USE\AppData\Local\Temp\scoped_dir20988_950414626}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), webauthn:extension:minPinLength=true, goog:chromeOptions={debuggerAddress=localhost:54089}, webauthn:extension:credBlob=true, webauthn:extension:prf=true, acceptInsecureCerts=false, browserVersion=131.0.6778.140, fedcm:accounts=true, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
-Session ID: 27b4d156c7a1f387a1656d48c3cdf441]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
-Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
-System info: host: 'LAPSAF80207', ip: '192.168.0.75', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
-Driver info: driver.version: RemoteWebDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=131.0.6778.204 (52183f9e99a61056f9b78535f53d256f1516f2a0-refs/branch-heads/6778_155@{#7}), userDataDir=C:\Users\LOCAL~1.USE\AppData\Local\Temp\scoped_dir20988_950414626}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), webauthn:extension:minPinLength=true, goog:chromeOptions={debuggerAddress=localhost:54089}, webauthn:extension:credBlob=true, webauthn:extension:prf=true, acceptInsecureCerts=false, browserVersion=131.0.6778.140, fedcm:accounts=true, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
-Session ID: 27b4d156c7a1f387a1656d48c3cdf441
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:658)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:694)
-at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:533)
-at za.co.flash.application.testScripts.TC01HomeLanding.tearDown(TC01HomeLanding.java:64)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:644)
-at org.testng.TestRunner.afterRun(TestRunner.java:914)
-at org.testng.TestRunner.run(TestRunner.java:605)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: java.lang.RuntimeException: Process refused to die after 10 seconds, and couldn't taskkill it: Couldn't detect pid
-at org.openqa.selenium.os.ProcessUtils.killWinProcess(ProcessUtils.java:133)
-at org.openqa.selenium.os.ProcessUtils.killProcess(ProcessUtils.java:81)
-at org.openqa.selenium.os.UnixProcess$SeleniumWatchDog.destroyHarder(UnixProcess.java:246)
-at org.openqa.selenium.os.UnixProcess$SeleniumWatchDog.access$200(UnixProcess.java:200)
-at org.openqa.selenium.os.UnixProcess.destroy(UnixProcess.java:126)
-at org.openqa.selenium.os.CommandLine.destroy(CommandLine.java:153)
-at org.openqa.selenium.remote.service.DriverService.stop(DriverService.java:221)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:94)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
-... 25 more
-Caused by: java.lang.RuntimeException: Couldn't detect pid
-at org.openqa.selenium.os.ProcessUtils.getProcessId(ProcessUtils.java:195)
-at org.openqa.selenium.os.ProcessUtils.killWinProcess(ProcessUtils.java:128)
-... 33 more
-Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make field private final long java.lang.ProcessImpl.handle accessible: module java.base does not "opens java.lang" to unnamed module @1996cd68
-at java.base/java.lang.reflect.AccessibleObject.throwInaccessibleObjectException(AccessibleObject.java:388)
-at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:364)
-at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:312)
-at java.base/java.lang.reflect.Field.checkCanSetAccessible(Field.java:183)
-at java.base/java.lang.reflect.Field.setAccessible(Field.java:177)
-at org.openqa.selenium.os.ProcessUtils.getProcessId(ProcessUtils.java:181)
-... 34 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
+        </test-method> <!-- runT4 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:za.co.flash.application.testScripts.TC01HomeLanding@707194ba]" started-at="2024-12-22T05:19:39 SAST" name="tearDown" finished-at="2024-12-22T05:19:40 SAST" duration-ms="367" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

@@ -17,7 +17,7 @@ public class RegisterPage {
 	}
 
 	public static WebElement registerOption(WebDriver driver) {
-		return driver.findElement(By.xpath("//a[contains(text(),'Register')]"));
+		return driver.findElement(By.linkText("Register"));
 	}
 
 	public static WebElement registerHeadingEl(WebDriver driver) {
@@ -79,32 +79,31 @@ public class RegisterPage {
 
 			// Step 3: Fill in Registration Form
 			genderEl(driver).click();
-			System.out.println("1.3. The user selects MALE from the gender radio buttons.");
+			System.out.println("1.3 The user selects MALE from the gender radio buttons.");
 
 			fNameEl(driver).sendKeys(fName);
-			System.out.println("1.4. The user enters first name into the first name field: " + fName);
+			System.out.println("1.4 The user enters first name into the first name field: " + fName);
 
 			lNameEl(driver).sendKeys(lName);
-			System.out.println("1.5. The user enters last name into the last name field: " + lName);
+			System.out.println("1.5 The user enters last name into the last name field: " + lName);
 
 			emailAddEl(driver).sendKeys(emailAdd);
-			System.out.println("1.6. The user enters email into the email field: " + emailAdd);
+			System.out.println("1.6 The user enters email into the email field: " + emailAdd);
 
 			passEl(driver).sendKeys(pass);
-			System.out.println("1.8. The user enters password Test into the password field.");
+			System.out.println("1.7 The user enters password Test into the password field.");
 
 			confirmPassEl(driver).sendKeys(pass);
-			System.out.println("1.9. The user confirms the password into the confirm password field.");
+			System.out.println("1.8 The user confirms the password into the confirm password field.");
 
 			registerBtnEl(driver).click();
+			Thread.sleep(3000);
 			continueBtn(driver).click();
-			System.out.println("1.10 Registration was successfull for user: " + emailAdd);
-		} catch (Error e) {
+			System.out.println("1.9 Registration was successfull for user: " + emailAdd);
+		} catch (Error | InterruptedException e) {
 			System.out.println("Test 1 Case failed...");
 			System.out.println("ERROR: " + e.getMessage());
 			System.out.println("Stopping Test...");
-			//driver.close();
-			//driver.quit();
 		}
 
 	}

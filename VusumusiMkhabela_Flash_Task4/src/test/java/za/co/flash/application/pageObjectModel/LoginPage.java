@@ -1,12 +1,8 @@
 package za.co.flash.application.pageObjectModel;
 
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
-import org.testng.Assert;
 
 public class LoginPage {
 
@@ -44,12 +40,11 @@ public class LoginPage {
 			// Step 2: Enter credentials
 			emailEl(driver).sendKeys(emailAdd);
 			passEl(driver).sendKeys(pass);
-			System.out.println("4.1. The user has entered details.");
+			System.out.println("4.1 The user has entered details.");
 
 			// Step 3: Log in
 			loginButton(driver).click();
-			System.out.println("4.2. The user logged in successfully.");
-			driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+			System.out.println("4.2 The user logged in successfully.");
 		} catch (Error e) {
 			System.out.println("Test 4 Case failed...");
 			System.out.println("ERROR: " + e.getMessage());

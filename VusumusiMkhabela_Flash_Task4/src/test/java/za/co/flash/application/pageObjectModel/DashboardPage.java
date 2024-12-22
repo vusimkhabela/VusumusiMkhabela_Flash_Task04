@@ -48,8 +48,6 @@ public class DashboardPage {
 			System.out.println("Test 2 Case failed...");
 			System.out.println("ERROR: " + e.getMessage());
 			System.out.println("Stopping Test...");
-			//driver.close();
-			//driver.quit();
 		}
 
 	}
